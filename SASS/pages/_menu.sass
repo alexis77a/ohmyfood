@@ -1,0 +1,190 @@
+@use '../utils/_mixin' as *
+
+.menu_restaurant_img
+    width: 100%
+    height: 250px
+    @include breakpoint(desktop)
+        height: 400px
+
+.menu
+    height: 950px
+    position: relative
+    top: -50px
+    margin-bottom: -50px
+    border-radius: 30px 30px 0px 0px 
+    @include breakpoint(desktop)
+        width: 100%
+        display: flex
+        justify-content: center
+        background: white
+
+.menu_big
+    height: 1015px
+    position: relative
+    top: -50px
+    margin-bottom: -50px
+    border-radius: 30px 30px 0px 0px
+    @include breakpoint(desktop)
+        width: 100%
+        display: flex
+        justify-content: center
+        background: white 
+
+.menu_container
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    align-items: center
+    @include breakpoint(desktop)
+        width: 70%
+        height: 1048px
+        position: relative
+        top: -35px
+        border-radius: 30px 30px 0px 0px
+        background: #F6F6F6
+
+.title_menu
+    width: 90%
+    height: 50px
+    display: flex
+    align-items: flex-end
+    margin: 0
+    font-size: 23px
+    font-weight: 400
+    font-family: 'Shrikhand'
+    @include breakpoint(desktop)
+        height: 100px 
+        justify-content: center
+        font-size: 25px
+
+.card_menu
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    align-content: center
+    gap: 15px
+    opacity: 1
+    @include breakpoint(desktop)
+        width: 85%
+
+.card_menu__title
+    width: 33px
+    border-bottom: 2px solid #99E2D0
+    margin: 21px 0px 0px 0px
+    font-size: 16px
+    font-weight: 300
+    @include breakpoint(desktop)
+        font-size: 18px
+        
+.menu_choice
+    width: 90%
+    height: 57px
+    border-radius: 14px
+    box-shadow: 0px 0px 35px -23px black
+    display: flex
+    flex-wrap: wrap
+    align-content: space-between
+    justify-content: center
+    flex-direction: column
+    position: relative
+    background-color: white 
+    opacity: 0
+    animation: slide 0.5s ease-out forwards
+    transform: translateY(50px)
+.menu_choice:hover .menu_choice__info
+    width: 56%
+.menu_choice:hover .menu_choice__title 
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+.menu_choice:hover .menu_choice__subtitle
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+.menu_choice:hover .menu_choice__price
+    width: 21%
+    justify-content: flex-end
+    @include breakpoint(tablet)
+        width: 31%
+.menu_choice:hover .checkbox 
+    width: 50px
+    margin-right: 0
+    transition: width 0.5s ease
+    @include breakpoint(tablet)
+        width: 10%
+    @include breakpoint(desktop)
+        width: 10%
+.menu_choice:hover .check
+    visibility: visible
+.menu_choice__info
+    width: 91%
+    height: 57px
+    display: flex
+    justify-content: center
+    flex-direction: column
+    margin: 0px 0px 0px 13px
+    @include breakpoint(tablet)
+        width: 95%
+    @include breakpoint(desktop)
+        width: 96%
+    
+    
+.menu_choice__title
+    width: 100%
+    height: 23px
+    align-self: center
+    font-size: 14px
+    margin: 0
+    @include breakpoint(desktop)
+        font-size: 17px
+.menu_choice__subtitle
+    width: 100%
+    height: 16px
+    align-self: center
+    font-size: 12px
+    font-weight: 300
+    margin: 0
+    @include breakpoint(desktop)
+        font-size: 15px
+.menu_choice__price
+    width: 0px
+    height: 57px
+    font-size: 12px
+    display: flex
+    justify-content: flex-end
+    position: relative
+    @include breakpoint(desktop)
+        font-size: 14px
+
+.price
+    width: 25px
+    height: 15px
+    margin: 0
+    position: absolute
+    bottom: 9px
+.checkbox
+    width: 0%
+    height: 100%
+    background: #99E2D0
+    border-radius: 0px 12px 12px 0px
+    display: flex
+    justify-content: center
+    align-items: center
+.check
+    width: 20px
+    height: 20px
+    display: flex
+    justify-content: center
+    align-items: center
+    border: 2px solid white
+    border-radius: 21px
+    background: white
+    visibility: hidden
+
+.card_menu .animationstarter
+    animation-delay: 0.1s
+.card_menu .animationmeal
+    animation-delay: 0.3s
+.card_menu .animationdessert
+    animation-delay: 0.5s

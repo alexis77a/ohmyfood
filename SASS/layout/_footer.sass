@@ -1,0 +1,70 @@
+@use '../utils/_mixin' as *
+
+footer
+    height: 190px
+    background-color: #353535
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    align-content: stretch
+
+    @include breakpoint(desktop)
+        height: 100px
+        display: flex
+        justify-content: flex-start
+        flex-direction: row-reverse
+        align-content: center
+        gap: 40px
+.footer_title
+    width: 85%
+    height: 50px
+    display: flex
+    align-items: flex-end
+    color: white
+    font-size: 18px
+    margin: 0
+    @include breakpoint(desktop)
+        width: 12%
+        height: 50%
+        font-weight: 500
+.footer_info
+    width: 85%
+    color: white
+    font-size: 15px
+    font-weight: 300
+    @include breakpoint(desktop)
+        width: 525px
+        height: 55%
+        display: flex
+        align-content: flex-end
+        flex-wrap: wrap
+        gap: 35px
+.footer_info__link
+    height: 28px
+    display: flex
+    align-items: center
+    gap: 10px
+    color: white
+    text-decoration: none
+    @include breakpoint(desktop)
+        gap: 3px
+.footer_info_text
+    margin: 0
+.footer_info_withoutIcon
+    width: 80%
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    @include breakpoint(desktop)
+        width: 300px
+        flex-direction: row
+        font-size: 14px
+.footer_info_withIcon
+    width: 50%
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    @include breakpoint(desktop)
+        width: 167px
+        flex-direction: row
+        font-size: 14px

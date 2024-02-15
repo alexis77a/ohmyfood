@@ -1,0 +1,88 @@
+@use '../utils/_mixin' as *
+
+.iconLocation
+    width: 25px
+    height: 16px
+    font-size: 15px
+    align-self: center
+.iconMobile
+    width: 25px
+    height: 25px
+    text-align: right
+    font-size: 19px
+    color: #7e7e7e
+
+    @include breakpoint(desktop)
+        width: 30px
+.icon_menu
+    width: 35px
+    height: 25px
+    color: #7e7e7e
+    font-size: 19px
+    text-align: right
+.iconVerticalPoint
+    width: 0px
+.iconBars
+    width: 18px
+.iconStore
+    width: 35px
+    height: 25px
+    font-size: 19px
+    text-align: right
+    color: #9356DC
+.iconUtensils
+    width: 14px
+    height: 14px
+    font-size: 13px
+.iconHandshake
+    width: 14px
+    height: 14px
+    font-size: 13px
+.fullHeart
+    opacity: 0
+    background: linear-gradient(180deg, rgba(147,86,220,1) 35%, rgba(255,121,218,1) 90%)
+    -webkit-background-clip: text
+    color: transparent
+.heart_icon
+    position: absolute
+    right: 50px
+    top: 15px
+.heart_icon i 
+    font-size: 27px
+    position: absolute
+    top: 0
+    left: 0
+    transition: 0.3s ease-in-out
+.heart_icon:hover i:first-child 
+    opacity: 0
+.heart_icon:hover i:last-child 
+    opacity: 1
+    background-clip: text
+.iconArrow
+    width: 30px
+    height: 30px
+    position: absolute
+    font-size: 30px
+    left: 15px
+    top: 15px
+    @include breakpoint(desktop)
+        left: 35px
+        top: 35px
+.iconEuro
+    width: 8px
+.iconCheck
+    width: 20px
+    height: 19px
+    color: #99E2D0
+    background-color: white
+    border-radius: 15px
+    font-size: 19px
+.heartMenu
+    top: 21px
+    right: 55px
+    position: absolute
+    @include breakpoint(desktop)
+        right: 217px
+        top: 67px
+
+
